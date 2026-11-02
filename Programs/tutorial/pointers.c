@@ -30,6 +30,4 @@ int main(int argc , char **argv){
     printf("after passing by value y becomes: %d\n", y);
     passbyreference(&y);
     printf("after pass by reference y becomes: %d\n", y);
-
-    
 }
