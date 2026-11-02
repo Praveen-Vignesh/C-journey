@@ -30,4 +30,15 @@ int main(int argc , char **argv){
     printf("after passing by value y becomes: %d\n", y);
     passbyreference(&y);
     printf("after pass by reference y becomes: %d\n", y);
+
+    //this is a void pointer
+    void *vp;
+
+    int a = 45;
+    
+    vp = &a; //this is allowed
+    // This is not allowed -> printf("%d", *vp)
+    // because since vp is a cvoid pointer it does not know how much bytes to move are read
+    // so we must type cast it
+    printf("the value of the void pointer is : %d\n", *(int *)vp);
 }
